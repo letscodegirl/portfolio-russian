@@ -1,0 +1,119 @@
+---
+layout: default 
+features: 
+ - title: Lightning Fast 
+   description: Porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt consectetur adipisicing elit.
+   icon_image: /images/icons/flash.png
+ - title: Strategic Perspective
+   description: Porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt consectetur adipisicing elit.
+   icon_image: /images/icons/idea-2.svg
+ - title: Optimised for Google
+   description: Porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt consectetur adipisicing elit.
+   icon_image: /images/icons/seo-tag.png
+ - title: Modern E-Commerce
+   description: Porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt consectetur adipisicing elit.
+   icon_image: /images/icons/dollar.svg
+---
+
+        <section class="bg-image bg-plant padded tall-70 grid-middle">
+            <div class="col-8_sm-10 editable">
+                <h2> Website design & development that grows with your business </h2>   
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
+            </div>
+        </section> 
+
+        <section class="padded-2 bg-dark center light-text editable"> 
+            <p> Sign up to our newsletter to access free design resources. -> </p>
+        </section>
+
+        <!-- Icon Grid  -->
+        <section class="padded grid center icon-section" id="why-us">
+            <div class="col-12 center padded-b editable"> 
+                <h2> Why Choose Us </h2>
+            </div>
+
+            {% for item in page.features %}
+
+                <div class="col-3_sm-6_xs-12">
+                    <img src="{{item.icon_image}}">
+                    <h4> {{item.title}} </h4>
+                    <p> {{item.description}} </p>
+                </div>
+
+            {% endfor %}
+
+        </section>
+
+        <!-- Dark intro section  -->
+        <section class="grid bg-green light-text padded">
+            <div class="col-7_sm-12 bg-image bg-meeting tall-50">
+
+            </div> 
+            <div class="col-5_sm-12-middle padded editable">
+                <h2> More than just another agency. </h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nulla ipsam doloremque optio fugiat culpa. Repudiandae magnam numquam expedita, dolorum similique distinctio praesentium sint ad vero fugit rem explicabo fugiat.</p>
+                <p> Velit libero blanditiis ipsam similique. Autem dolorem, nobis ut magnam nulla hic beatae, amet est aperiam deleniti minima unde fuga? </p>
+            </div>
+
+        </section>
+
+        <section class="padded bg-dark center light-text"> 
+            <h3> We have a community of over 3500 entrepreneurs.  </h3>
+            <a href="#" class="button"> Join the Facebook Community </a>
+        </section>
+
+        <!-- Opening banner  -->
+
+        <section class="bg-image bg-plant-2 padded center tall-70 grid-right" id="services">
+            <div class="col-6_sm-8-middle right">
+                <h2> Our Services </h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
+            </div>
+        </section>
+
+        <!-- Grid of services  -->
+        <section class="padded grid">
+            <div class="col-4_xs-12 padded">
+                <h3> Design. </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
+            </div>
+            <div class="col-4_xs-12 padded">
+                <h3> Build. </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
+            </div>
+            <div class="col-4_xs-12 padded">
+                <h3> SEO. </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
+            </div>
+        </section>
+
+        <!-- Features / about blocks -->
+
+        <section class="bg-rust padded projects" id="projects">
+            <h2 class="center"> Recent Projects </h2>
+            <div class="grid">
+                
+                <div class="col-5_sm-12-middle padded">
+                    <h3> Zen Studio Website </h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde quia explicabo illum, adipisci beatae nemo consectetur repellat ratione eius, repudiandae architecto eaque placeat velit cum, sint odit consequuntur ad?</p>
+                    <a href="#" class="button"> Go to site </a>
+                </div>
+                <div class="col-7_sm-12-middle padded">
+                    <img src="/images/placeholder-project.png" alt="project name by the collective">    
+                </div>
+
+            </div>
+            <div class="grid flex-flip-sm">
+
+                <div class="col-7_sm-12-middle padded">
+                    <img src="/images/placeholder-project.png" alt="project name by the collective">    
+                </div>
+                
+                <div class="col-5_sm-12-middle padded">
+                    <h3> Another Website Name </h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde quia explicabo illum, adipisci beatae nemo consectetur repellat ratione eius, repudiandae architecto eaque placeat velit cum, sint odit consequuntur ad?</p>
+                    <a href="#" class="button"> Go to site </a>
+                </div>
+            </div>
+        </section> 
+
