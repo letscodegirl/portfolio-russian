@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- The title for SEO & browser tabs -->
+        <title> Portfolio Website </title>
+
+        <!-- Viewport meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Gridlex -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Google Fonts  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">  
+
+        <!-- My own custom stylesheet -->
+        <link rel="stylesheet" href="/style.css">
+
+    </head>
+    <body> 
+
+        <header class="grid">
+            <div class="col-6_sm-12-middle padded-0 center-sm">
+                <h1> The Design Collective. </h1>   
+            </div>  
+            <nav class="col-6_sm-12-middle right padded-0 center-sm"> 
+                <a href="#why-us"> Why Us </a>
+                <a href="#services"> Services </a>
+                <a href="#projects"> Projects </a>
+                <a href="#contact"> Contact </a>
+            </nav>
+        </header> 
+
+
+        <!-- Add Shopify Code  -->
+        <section class="shop center padded">
+            <div class="padded-b">
+                <h2> Shop our products  </h2>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt distinctio sed fugit quo quaerat, fugiat ipsum dicta commodi iusto nemo sunt minus hic, neque consequuntur qui. Eveniet autem doloribus blanditiis?</p>
+            </div>
+            <div id='collection-component-1626501970529'></div>
+        </section>
+
+
+
+
+        <!-- Footer  -->
+        <footer class="grid bg-dark light-text padded padded-b-0" id="contact">
+            <div class="col-6_sm-12 padded center-sm">
+                <h2 class="logo"> The Design Collective </h2>
+                <h3> Web Design & Development </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita eos cumque laboriosam nisi molestiae quae libero similique. </p>
+            </div> 
+            <div class="col-6_sm-12-bottom padded right center-sm">
+                <h3> Let's Connect. </h3>
+                <nav> 
+                    <a href="#"> <i class="fab fa-pinterest-p"></i> </a>
+                    <a href="#"> <i class="fab fa-instagram"></i> </a>
+                    <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                    <a href="#"> <i class="fab fa-twitter"></i> </a>
+                </nav>
+            </div>
+            <div class="col-12 center padded-t">
+                <p class="subtle"> Copyright 2021</p>
+            </div>
+
+        </footer>
+
+
+
+
+        <!-- Important Shopify Javascript  -->
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
+                }
+              } else {
+                loadScript();
+              }
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'ioc-demo.myshopify.com',
+                  storefrontAccessToken: 'e035e6954807528b88c86229eeee500c',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  ui.createComponent('collection', {
+                    id: '278787195033',
+                    node: document.getElementById('collection-component-1626501970529'),
+                    moneyFormat: 'Rp%20%7B%7Bamount_with_comma_separator%7D%7D',
+                    options: {
+              "product": {
+                "styles": {
+                  "product": {
+                    "@media (min-width: 601px)": {
+                      "max-width": "calc(25% - 20px)",
+                      "margin-left": "20px",
+                      "margin-bottom": "50px",
+                      "width": "calc(25% - 20px)"
+                    }
+                  },
+                  "button": {
+                    "border-radius": "20px",
+                    "padding-left": "61px",
+                    "padding-right": "61px"
+                  }
+                },
+                "buttonDestination": "modal",
+                "contents": {
+                  "options": false
+                },
+                "text": {
+                  "button": "View Details"
+                }
+              },
+              "productSet": {
+                "styles": {
+                  "products": {
+                    "@media (min-width: 601px)": {
+                      "margin-left": "-20px"
+                    }
+                  }
+                }
+              },
+              "modalProduct": {
+                "contents": {
+                  "img": false,
+                  "imgWithCarousel": true,
+                  "button": false,
+                  "buttonWithQuantity": true
+                },
+                "styles": {
+                  "product": {
+                    "@media (min-width: 601px)": {
+                      "max-width": "100%",
+                      "margin-left": "0px",
+                      "margin-bottom": "0px"
+                    }
+                  },
+                  "button": {
+                    "border-radius": "20px",
+                    "padding-left": "61px",
+                    "padding-right": "61px"
+                  }
+                },
+                "text": {
+                  "button": "Add to cart"
+                }
+              },
+              "option": {},
+              "cart": {
+                "styles": {
+                  "button": {
+                    "border-radius": "20px"
+                  }
+                },
+                "text": {
+                  "total": "Subtotal",
+                  "button": "Checkout"
+                }
+              },
+              "toggle": {}
+            },
+                  });
+                });
+              }
+            })();
+            /*]]>*/
+        </script>
+
+    </body>
+</html>
