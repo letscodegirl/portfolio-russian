@@ -2,6 +2,54 @@
 layout: default
 ---
 
-<section>
-    PORTFOLIO
+<section class="padded bg-green grid">
+    <div class="col-9 light-text padded-b">
+        <h2>We design & create but if you have a design of your own, let us know. </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellendus aliquid possimus voluptates facere adipisci reiciendis sequi nobis fugit amet. Quia voluptates asperiores quas deserunt dolorum quis, dignissimos natus vero?</p>
+    </div>
+
+    {% for project in site.projects limit:5 offset:1 %}
+
+        <div class="col-7_sm-12-middle margin-b-2">
+            <div class="bg-image landscape" style="background-image: url('{{ project.featured_image }}')"></div>
+        </div> 
+        <div class="col-5_sm-12-middle padded-2">
+            <h3>{{ project.title }}</h3>
+            <p class="emphasis"> {{ project.description }}</p>
+            <p class="emphasis"> Design by: {{ project.design-by }}</p>
+            <p class="emphasis"> Build by: {{ project.build-by }}</p>
+            <a href="{{ project.live_url }}" class="button" target="_blank"> View Live Site </a>
+        </div>
+   
+    {% endfor %}
+    
+</section>
+
+{% include newsletter-signup.html %}
+
+<section class="padded">
+    
+    <h2 class="center">  Featured Project </h2>
+
+    <div class="capped-width">
+        
+        {% for project in site.projects limit:1 %}
+
+            <div class="bg-image landscape" style="background-image: url('{{ project.featured_image }}')"></div>
+            <div class="grid-spaceBetween">
+                <div class="col-5 padded-1">
+                    <h3>{{ project.title }}</h3>
+                    <p class="emphasis"> {{ project.description }}</p>
+                </div>
+                <div class="col-4 padded-1">
+                    <p class="emphasis"> Design by: {{ project.design-by }}</p>
+                    <p class="emphasis"> Build by: {{ project.build-by }}</p>
+                    <a href="{{ project.live_url }}" class="button" target="_blank"> View Live Site </a>
+                </div>
+
+            </div>
+
+        {% endfor %}
+
+    </div>
 </section>

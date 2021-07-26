@@ -1,7 +1,37 @@
 ---
 layout: default
+banner_image: /images/plant-2.jpg
 ---
 
-<section>
-    CONTACT
+<section class="tall-60 grid bg-green">
+    <div class="col-7 bg-image" style="background-image: url('{{page.banner_image}}');">
+
+    </div>
+    <div class="col-5-middle editable padded ">
+        <h2> Get in touch.</h2>   
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
+    </div>
+</section> 
+
+<section class="padded capped-width">
+    <div class="center editable margin-b-2">
+        <h2> The personal touch </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi velit, mollitia modi officiis illo adipisci nisi fugit, reprehenderit voluptas eveniet delectus, vel cum. Eius suscipit minus sunt obcaecati, animi eos.</p>
+    </div>
+
+    <form>
+  
+        <label for="_name"> Your Name </label>
+        <input type="text" name="_name" id="_name" placeholder="Name" />
+      
+        <label for="_replyto"> Your Email </label>
+        <input type="email" name="_replyto" id="_replyto" placeholder="Email" />
+      
+        <label for="message"> Tell me everything about you... </label>
+        <textarea name="message" id="message" placeholder="Hey I want to ..."></textarea>
+      
+        <button type="submit" class="button"> SUBMIT </button>
+        
+      </form> 
+
 </section>
