@@ -1,6 +1,6 @@
-/* 
+/*
 
-    colors: 
+    colors:
     rust #c29880
     dark-rust: #a2745c
     green: #c29880
@@ -29,7 +29,7 @@ html {
 
 /* Utility Classes */
 
-.tall-50 { min-height: 50vh; }
+.tall-50 { min-height: 120vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
 .tall-80 { min-height: 80vh; }
@@ -58,7 +58,7 @@ html {
 .bg-green     { background-color: #9b9b81;}
 .bg-dark     { background-color: #a2745c;  }
 
-.light-text { color: white; } 
+.light-text { color: white; }
 
 
 .left   { text-align: left; }
@@ -102,7 +102,7 @@ h3 {
 }
 
 p  {
- font-weight: 300;   
+ font-weight: 300;
  line-height: 1.3;
  margin-bottom: 0.8rem;
  font-size: 1rem;
@@ -125,7 +125,7 @@ a:hover { color: #a2745c; }
 
 .button {
   text-decoration: none;
-  border: 2px solid; 
+  border: 2px solid;
   padding: 0.5rem 1rem;
   display: inline-block;
   font-weight: 400;
@@ -136,14 +136,14 @@ a:hover { color: #a2745c; }
     color: #d3b4a2;
 }
 
-.subtle { 
+.subtle {
     opacity: 0.8;
     font-size: 0.9rem;
 }
 
 .emphasis {
     font-size: 1.1rem;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
 
@@ -153,8 +153,8 @@ header {
     padding: 2% 5%;
 }
 
-footer a:hover { 
-    color: #d3b4a2; 
+footer a:hover {
+    color: #d3b4a2;
 }
 
 /* Icon Grid Section  */
@@ -168,9 +168,9 @@ footer a:hover {
 /* Background Images */
 
 .bg-image {
-    background-color:rgb(240,240,240); 
-    background-size: cover; 
-    background-position: center; 
+    background-color:rgb(240,240,240);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-image: url('/images/plant.jpg');
 }
@@ -209,7 +209,7 @@ footer a:hover {
 
 /* Contact Forms  */
 
-form input, 
+form input,
 form textarea {
   width: 100%;
   margin: 0.5rem 0;
@@ -278,7 +278,7 @@ form .button {
     .bg-plant {
         background-image: url('/images/plant-light.png');
     }
-    
+
     .bg-plant-2 {
         background-image: url('/images/plant-2-light.png');
         background-position: 45% 50%;

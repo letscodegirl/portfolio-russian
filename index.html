@@ -4,16 +4,16 @@ layout: default
 
 <section class="bg-image bg-plant padded tall-70 grid-middle">
     <div class="col-8_sm-10 editable">
-        <h2> Website design & development that grows with your business </h2>   
+        <h2> Russian Food For You </h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
     </div>
-</section> 
+</section>
 
 {% include newsletter-signup.html %}
 
 <!-- Icon Grid  -->
 <section class="padded grid center icon-section" id="why-us">
-    <div class="col-12 center padded-b editable"> 
+    <div class="col-12 center padded-b editable">
         <h2> Why Choose Us </h2>
     </div>
     <div class="col-3_sm-6_xs-12">
@@ -42,18 +42,13 @@ layout: default
 <section class="grid bg-green light-text padded">
     <div class="col-7_sm-12 bg-image bg-meeting tall-50">
 
-    </div> 
+    </div>
     <div class="col-5_sm-12-middle padded editable">
         <h2> More than just another agency. </h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nulla ipsam doloremque optio fugiat culpa. Repudiandae magnam numquam expedita, dolorum similique distinctio praesentium sint ad vero fugit rem explicabo fugiat.</p>
         <p> Velit libero blanditiis ipsam similique. Autem dolorem, nobis ut magnam nulla hic beatae, amet est aperiam deleniti minima unde fuga? </p>
     </div>
 
-</section>
-
-<section class="padded bg-dark center light-text"> 
-    <h3> We have a community of over 3500 entrepreneurs.  </h3>
-    <a href="#" class="button"> Join the Facebook Community </a>
 </section>
 
 <!-- Opening banner  -->
@@ -68,15 +63,15 @@ layout: default
 <!-- Grid of services  -->
 <section class="padded grid">
     <div class="col-4_xs-12 padded">
-        <h3> Design. </h3>
+        <h3> Dried Seafood </h3>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
     </div>
     <div class="col-4_xs-12 padded">
-        <h3> Build. </h3>
+        <h3> Sauce </h3>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
     </div>
     <div class="col-4_xs-12 padded">
-        <h3> SEO. </h3>
+        <h3> Bakery </h3>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
     </div>
 </section>
@@ -86,21 +81,20 @@ layout: default
 <section class="bg-rust padded projects" id="projects">
     <h2 class="center"> Recent Projects </h2>
 
-    {% for project in site.projects limit: 2 %}
+    {% for project in site.projects limit: 3 %}
 
         <div class="grid flex-flip-alternate">
-            
+
             <div class="col-5_sm-12-middle padded">
                 <h3> {{ project.title }} </h3>
                 <p> {{ project.description }}</p>
-                <a href="{{ project.live_url }}" class="button" target="_blank"> Go to site </a>
             </div>
             <div class="col-7_sm-12-middle padded">
-                <img src="{{ project.featured_image }}" alt="{{ project.title }}">    
+                <img src="{{ project.featured_image }}" alt="{{ project.title }}">
             </div>
 
     </div>
 
     {% endfor %}
 
-</section> 
+</section>
