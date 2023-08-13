@@ -29,7 +29,7 @@ html {
 
 /* Utility Classes */
 
-.tall-50 { min-height: 110vh; }
+.tall-50 { min-height: 100vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
 .tall-80 { min-height: 80vh; }
@@ -56,7 +56,7 @@ html {
 
 .bg-rust     { background-color: #977C60; }
 .bg-green     { background-color: #3E3D3A;}
-.bg-dark     { background-color: #a2745c;  }
+.bg-dark     { background-color: #0A0A0A;  }
 
 .light-text { color: white; }
 
@@ -85,7 +85,7 @@ html {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-    color: rgb(60,60,60);
+    color: #0A0A0A;
 }
 
 h2,h3,h4,h5,h6 {
