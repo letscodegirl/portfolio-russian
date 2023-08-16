@@ -1,22 +1,76 @@
 ---
 layout: default
-features:
- - title: Beautiful Designs
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit vitae, nam libero ipsam aspernatur sequi et officia? Quam, corrupti quae tempora quidem cupiditate quibusdam earum perferendis nisi aut animi.
-   featured_image: /images/placeholder-project.png
- - title: Optimized Builds
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit vitae, nam libero ipsam aspernatur sequi et officia? Quam, corrupti quae tempora quidem cupiditate quibusdam earum perferendis nisi aut animi.
-   featured_image: /images/placeholder-project.png
+gallery:
+ - title: Dried Seafood
+   img: /images/placeholder-project.png
+ - title: Another Dried Seafood
+   img: /images/meeting.jpg
+ - title: Another Dried Seafood
+   img: /images/withbeer2.jpg
+ - title: Another Dried Seafood
+   img: /images/closeup.jpg
+ - title: Another Dried Seafood
+   img: /images/withbeer2.jpg
+about-video-id: lrM5CRg-O0I
 ---
 
-<section class="bg-image bg-plant-2 padded tall-70 grid-middle-right" >
+<section class="bg-image bg-plant-2 padded tall-70 grid-middle-right light-text" >
     <div class="col-6_sm-10 editable right">
-        <h2> Our Services </h2>
+        <h2> Dried Seafood </h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
     </div>
 </section>
 
 <section>
+
+{% include newsletter-signup.html %}
+
+</section>
+
+
+<div class="parent">
+    {% for image in page.gallery %}
+
+    <img src="{{ image.img }}" alt="{{ image.title }}">
+
+
+    {% endfor %}
+</div>
+
+<section>
+
+    {% include newsletter-signup.html %}
+
+</section>
+
+
+<!-- Dark intro section  -->
+<section class="grid bg-green light-text padded">
+    <div class="col-7_sm-12 bg-image bg-info tall-50">
+
+    </div>
+    <div class="col-5_sm-12-middle padded editable">
+        <h2> More than just another fish. </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nulla ipsam doloremque optio fugiat culpa.
+            Repudiandae magnam numquam expedita, dolorum similique distinctio praesentium sint ad vero fugit rem
+            explicabo fugiat.</p>
+        <p> Velit libero blanditiis ipsam similique. Autem dolorem, nobis ut magnam nulla hic beatae, amet est aperiam
+            deleniti minima unde fuga? </p>
+    </div>
+
+</section>
+
+<section class="padded bg-rust center">
+    <h2 class="editable"> Watch our dried fish video </h2>
+    <p class="emphasis editable"> Featured j-bomb the terrier </p>
+    <div class="padded-1">
+        <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{ page.about-video-id }}'
+                frameborder='0' allowfullscreen></iframe></div>
+    </div>
+</section>
+
+
+<!-- <section>
 
     {% for item in page.features %}
 
@@ -34,4 +88,4 @@ features:
 
     {% endfor %}
 
-</section>
+</section> -->

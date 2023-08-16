@@ -29,7 +29,7 @@ html {
 
 /* Utility Classes */
 
-.tall-50 { min-height: 100vh; }
+.tall-50 { min-height: 80vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
 .tall-80 { min-height: 80vh; }
@@ -55,8 +55,8 @@ html {
 
 
 .bg-rust     { background-color: #977C60; }
-.bg-green     { background-color: #3E3D3A;}
-.bg-dark     { background-color: #0A0A0A;  }
+.bg-green     { background-color: #212103;}
+.bg-dark     { background-color: #0A0A0A; }
 
 .light-text { color: white; }
 
@@ -186,7 +186,7 @@ footer a:hover {
 
 .bg-plant {
     background-image: url('/images/plant.jpg');
-    background-position: 50% 43%;
+    background-position: 50% 30%;
 }
 
 .bg-plant-2 {
@@ -200,11 +200,29 @@ footer a:hover {
     background-image: url('/images/mockup.jpg');
 }
 
+.bg-info {
+    background-image: url('/images/info.png');
+}
+
 .right-arrow {
     max-width: 2rem;
     margin-left: 1rem;
     margin-top: 0.2rem;
 }
+
+.qrcode {
+    width: 10rem;
+}
+
+/* grid for services */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+
 
 
 /* Contact Forms  */
@@ -214,7 +232,7 @@ form textarea {
   width: 100%;
   margin: 0.5rem 0;
   padding: 0.5rem;
-  border: 2px solid #a2745c;
+  border: 2px solid #0A0A0A;
   outline: none;
   font-family: inherit;
   font-size: 0.9rem;
@@ -232,14 +250,14 @@ textarea {
 form label {
   margin-top: 1rem;
   display: block;
-  color: #a2745c;
+  color: #0A0A0A;
   font-weight: bold;
 }
 
 form .button {
-    border: 2px solid #a2745c;
+    border: 2px solid #0A0A0A;
     background: none;
-    color: #a2745c;
+    color: #0A0A0A;
     font-weight: bold;
     padding: 0.5rem 2rem;
     margin-top: 1rem;

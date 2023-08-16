@@ -1,7 +1,7 @@
 ---
 layout: default
-features: 
- - title: Beautiful Designs 
+features:
+ - title: Beautiful Designs
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit vitae, nam libero ipsam aspernatur sequi et officia? Quam, corrupti quae tempora quidem cupiditate quibusdam earum perferendis nisi aut animi.
    featured_image: /images/placeholder-project.png
  - title: Optimized Builds
@@ -9,12 +9,12 @@ features:
    featured_image: /images/placeholder-project.png
 ---
 
-<section class="bg-image bg-plant-2 padded tall-70 grid-middle-right" >
+<section class="bg-image bg-plant-2 padded tall-70 grid-middle-right light-text" >
     <div class="col-6_sm-10 editable right">
-        <h2> Our Services </h2>   
+        <h2> Sauce </h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
     </div>
-</section> 
+</section>
 
 <section class="padded bg-green">
     <div class="capped-width grid">
@@ -46,13 +46,13 @@ features:
     {% for item in page.features %}
 
     <div class="grid flex-flip-alternate">
-            
+
         <div class="col-5_sm-12-middle padded">
             <h3> {{ item.title }} </h3>
             <p> {{ item.description }}</p>
         </div>
         <div class="col-7_sm-12-middle padded">
-            <img src="{{ item.featured_image }}" alt="{{ item.title }}">    
+            <img src="{{ item.featured_image }}" alt="{{ item.title }}">
         </div>
 
     </div>
