@@ -6,8 +6,8 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-    "services-3.html": true,
-    "**/services-3.html": true
+    "services-3.html": false,
+    "**/services-3.html": false
   },
   "explorerExclude.backup": {}
 }

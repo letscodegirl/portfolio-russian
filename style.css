@@ -179,9 +179,24 @@ footer a:hover {
     border-radius: 100%;
 }
 
-
 .landscape {
     padding-bottom: 60%;
+}
+
+.squareimg {
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.squareimg img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .bg-plant {
