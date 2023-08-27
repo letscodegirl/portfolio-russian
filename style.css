@@ -35,6 +35,8 @@ html {
 .tall-80 { min-height: 80vh; }
 .tall-90 { min-height: 90vh; }
 
+.tall-video { min-height: 55.5vw; }
+
 
 .padded    { padding: 5%;    }
 .padded-1  { padding: 1rem;  }
