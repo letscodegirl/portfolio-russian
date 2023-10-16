@@ -16,10 +16,16 @@
     box-sizing: border-box;
 }
 
-img { max-width: 100%; }
+img {
+    max-width: 100%;
+}
+
+.logo {
+    max-width: 70%;
+}
 
 [class*=grid] {
-    margin:0;
+    margin: 0;
 }
 
 html {
@@ -29,56 +35,122 @@ html {
 
 /* Utility Classes */
 
-.tall-50 { min-height: 80vh; }
-.tall-60 { min-height: 60vh; }
-.tall-70 { min-height: 70vh; }
-.tall-80 { min-height: 80vh; }
-.tall-90 { min-height: 90vh; }
+.tall-50 {
+    min-height: 80vh;
+}
 
-.tall-video { min-height: 55.5vw; }
+.tall-60 {
+    min-height: 60vh;
+}
 
+.tall-70 {
+    min-height: 70vh;
+}
 
-.padded    { padding: 5%;    }
-.padded-1  { padding: 1rem;  }
-.padded-2  { padding: 2rem;  }
+.tall-80 {
+    min-height: 80vh;
+}
 
+.tall-90 {
+    min-height: 90vh;
+}
 
-.padded-t  { padding-top: 5%;     }
-.padded-b  { padding-bottom: 5%;  }
-.padded-l  { padding-left: 5%;    }
-.padded-r  { padding-right: 5%;   }
-
-.margin-b-1 { margin-bottom: 1rem; }
-.margin-b-2 { margin-bottom: 2rem; }
-
-.padded-0 { padding: 0; }
-.padded-b-0 { padding-bottom: 0; }
-.margin-b-0 { margin-bottom: 0; }
+.tall-video {
+    min-height: 55.5vw;
+}
 
 
-.bg-rust     { background-color: #977C60; }
-.bg-green     { background-color: #212103;}
-.bg-dark     { background-color: #0A0A0A; }
+.padded {
+    padding: 5%;
+}
 
-.light-text { color: white; }
+.padded-1 {
+    padding: 1rem;
+}
+
+.padded-2 {
+    padding: 2rem;
+}
 
 
-.left   { text-align: left; }
-.center { text-align: center; }
-.right  { text-align: right; }
+.padded-t {
+    padding-top: 5%;
+}
+
+.padded-b {
+    padding-bottom: 5%;
+}
+
+.padded-l {
+    padding-left: 5%;
+}
+
+.padded-r {
+    padding-right: 5%;
+}
+
+.margin-b-1 {
+    margin-bottom: 1rem;
+}
+
+.margin-b-2 {
+    margin-bottom: 2rem;
+}
+
+.padded-0 {
+    padding: 0;
+}
+
+.padded-b-0 {
+    padding-bottom: 0;
+}
+
+.margin-b-0 {
+    margin-bottom: 0;
+}
+
+
+.bg-rust {
+    background-color: #977C60;
+}
+
+.bg-green {
+    background-color: #212103;
+}
+
+.bg-dark {
+    background-color: #0A0A0A;
+}
+
+.light-text {
+    color: white;
+}
+
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
 
 .capped-width {
     max-width: 1000px;
-    margin:auto;
+    margin: auto;
 }
 
 .capped-width-narrow {
     max-width: 900px;
-    margin:auto;
+    margin: auto;
 }
 
 .flex-flip-alternate:nth-child(even) {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .background {
@@ -104,7 +176,11 @@ body {
     color: #0A0A0A;
 }
 
-h2,h3,h4,h5,h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: 0.5rem;
     letter-spacing: -0.01em;
 }
@@ -117,19 +193,21 @@ h3 {
     font-size: 1.8rem;
 }
 
-p  {
- font-weight: 300;
- line-height: 1.3;
- margin-bottom: 0.8rem;
- font-size: 1rem;
+p {
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
 }
 
-p:last-child{
+p:last-child {
     margin-bottom: 0;
 }
 
 a {
-    color: inherit;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 nav a {
@@ -137,15 +215,17 @@ nav a {
     padding: 0.25rem;
 }
 
-a:hover { color: #a2745c; }
+a:hover {
+    color: #a2745c;
+}
 
 .button {
-  text-decoration: none;
-  border: 2px solid;
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  font-weight: 400;
-  color: white;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: 400;
+    color: white;
 }
 
 .bg-dark .button:hover {
@@ -184,7 +264,7 @@ footer a:hover {
 /* Background Images */
 
 .bg-image {
-    background-color:rgb(240,240,240);
+    background-color: rgb(240, 240, 240);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -224,9 +304,11 @@ footer a:hover {
     background-image: url('/images/plant-2.jpg');
     background-position: 75% 50%;
 }
+
 .bg-meeting {
     background-image: url('/images/meeting.jpg');
 }
+
 .bg-mockup {
     background-image: url('/images/mockup.jpg');
 }
@@ -260,29 +342,29 @@ footer a:hover {
 
 form input,
 form textarea {
-  width: 100%;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  border: 2px solid #0A0A0A;
-  outline: none;
-  font-family: inherit;
-  font-size: 0.9rem;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 2px solid #0A0A0A;
+    outline: none;
+    font-family: inherit;
+    font-size: 0.9rem;
 }
 
 form input:focus,
 form textarea:focus {
-  border-color: #9b9b81;
+    border-color: #9b9b81;
 }
 
 textarea {
-  min-height: 4rem;
+    min-height: 4rem;
 }
 
 form label {
-  margin-top: 1rem;
-  display: block;
-  color: #0A0A0A;
-  font-weight: bold;
+    margin-top: 1rem;
+    display: block;
+    color: #0A0A0A;
+    font-weight: bold;
 }
 
 form .button {
@@ -318,11 +400,17 @@ form .button {
 /* SM - max-width in pixels approximately 768px */
 @media(max-width: 48em) {
 
-    .hide-sm {display: none; }
+    .hide-sm {
+        display: none;
+    }
 
-    .center-sm { text-align: center; }
+    .center-sm {
+        text-align: center;
+    }
 
-    .flex-flip-sm { flex-direction: column-reverse; }
+    .flex-flip-sm {
+        flex-direction: column-reverse;
+    }
 
     .bg-plant {
         background-image: url('/images/plant-light.png');

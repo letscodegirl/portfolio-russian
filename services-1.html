@@ -1,29 +1,31 @@
 ---
 layout: default
 gallery:
- - title: Dried Seafood
-   img: /images/placeholder-project.png
- - title: Another Dried Seafood
-   img: /images/meeting.jpg
- - title: Another Dried Seafood
-   img: /images/withbeer2.jpg
- - title: Another Dried Seafood
-   img: /images/closeup.jpg
- - title: Another Dried Seafood
-   img: /images/withbeer2.jpg
+- title: Dried Seafood
+img: /images/placeholder-project.png
+- title: Another Dried Seafood
+img: /images/meeting.jpg
+- title: Another Dried Seafood
+img: /images/withbeer2.jpg
+- title: Another Dried Seafood
+img: /images/closeup.jpg
+- title: Another Dried Seafood
+img: /images/withbeer2.jpg
 about-video-id: lrM5CRg-O0I
 ---
 
-<section class="bg-image bg-plant-2 padded tall-70 grid-middle-right light-text" >
+<section class="bg-image bg-plant-2 padded tall-70 grid-middle-right light-text">
     <div class="col-6_sm-10 editable right">
         <h2> Dried Seafood </h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum?
+            Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores!
+            Molestiae, consequuntur?</p>
     </div>
 </section>
 
 <section>
 
-{% include newsletter-signup.html %}
+    {% include newsletter-signup.html %}
 
 </section>
 
@@ -31,9 +33,9 @@ about-video-id: lrM5CRg-O0I
 <div class="parent">
     {% for image in page.gallery %}
 
-<div class="squareimg">
-    <img src="{{ image.img }}" alt="{{ image.title }}">
-</div>
+    <div class="squareimg">
+        <img src="{{ image.img }}" alt="{{ image.title }}">
+    </div>
 
     {% endfor %}
 
