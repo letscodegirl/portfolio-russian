@@ -420,6 +420,10 @@ form .button {
         margin-bottom: 1rem;
     }
 
+    .mt {
+        margin-top: 1rem;
+    }
+
     .center-sm {
         text-align: center;
     }
