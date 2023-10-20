@@ -127,6 +127,10 @@ html {
     color: white;
 }
 
+.koc-text {
+    color: #15B86A;
+}
+
 
 .left {
     text-align: left;
@@ -282,6 +286,14 @@ footer a:hover {
     background-repeat: no-repeat;
     background-image: url('/images/plant.jpg');
 }
+
+.bg-koc {
+    background-image: url('/images/koc_re.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .profile-image {
     border-radius: 100%;
@@ -452,6 +464,10 @@ form .button {
     .bg-plant-2 {
         background-image: url('/images/withbeer2.jpg');
         background-position: 30% 50%;
+    }
+
+    .bg-plant-3 {
+        background-image: url('/images/koc_re.jpeg');
     }
 
 }
